@@ -1,0 +1,20 @@
+{
+  "name": "@electropap/monorepo",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=18.18"
+  },
+  "packageManager": "npm@10",
+  "scripts": {
+    "dev:api": "npm run dev -w apps/api",
+    "dev:web": "npm run dev -w apps/web",
+    "build:all": "npm -ws run build",
+    "start:api": "npm run start -w apps/api",
+    "start:web": "npm run start -w apps/web"
+  }
+}
